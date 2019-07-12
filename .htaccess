@@ -1,0 +1,55 @@
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+
+# Activar RewriteEngine
+
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+
+RewriteRule ^/$ index.php [L]
+
+RewriteRule ^inicio$ index.php [L]
+RewriteRule ^nosotros$ nosotros.php [L]
+RewriteRule ^productos$ productos.php [L]
+RewriteRule ^clientes$ clientes.php [L]
+RewriteRule ^contacto$ contacto.php [L]
+RewriteRule ^reductores-de-velocidad$ productos-1.php [L]
+RewriteRule ^topes-de-estacionamiento$ productos-2.php [L]
+RewriteRule ^protectores-de-columnas-y-pared$ productos-3.php [L]
+RewriteRule ^delimitador-vial$ productos-4.php [L]
+RewriteRule ^semaforos-leds$ productos-5.php [L]
+
+RewriteRule ^speed-hump$ productos-1-easy-rider.php [L]
+RewriteRule ^speed-bump$ productos-1-speedhump.php [L]
+RewriteRule ^speed-cushion$ productos-1-speedcushion.php [L]
+RewriteRule ^car-stop-1$ productos-2-park-it.php [L]
+RewriteRule ^car-stop-2$ productos-2-car-stop.php [L]
+RewriteRule ^cadena-eslabonada-plastica$ cadena-eslabonada-plastica.php [L]
+
+RewriteRule ^protector-columna$ productos-3-protector-columna.php [L]
+RewriteRule ^protector-pared$ productos-3-protector-pared.php [L]
+RewriteRule ^protector-de-pared-direccional$ productos-3-protector-pared-direccional.php [L]
+RewriteRule ^boyas$ productos-4-boyas.php [L]
+RewriteRule ^bolardos$ productos-4-bolardos.php [L]
+RewriteRule ^tachas-u-ojos-de-gato$ productos-4-tachasdegato.php [L]
+RewriteRule ^bolardo-de-fierro$ productos-4-bolardodefierro.php [L]
+RewriteRule ^protector-de-cables$ protectores-de-cables.php [L]
+RewriteRule ^contenedores-y-tachos-de-basura$ contenedores-de-basura.php [L]
+RewriteRule ^boyas-con-reductores-de-velocidad$ boyas-con-reductores-de-velocidad.php [L]
+RewriteRule ^barrera-plegable$ barrera-plegable.php [L]
+RewriteRule ^espejos-circulares-para-estacionamientos$ espejos-circulares.php [L]
+RewriteRule ^bloqueador-de-estacionamiento$ bloqueador-de-estacionamiento.php [L]
+RewriteRule ^radar-camara-deteccion-de-velocidad$ radar-camara-de-deteccion-de-velocidad.php [L]
+RewriteRule ^bolardo-retractil$ bolardo-retractil.php [L]
+RewriteRule ^bolardos-de-plastico$ productos-4-bolardodeplastico.php [L]  
+RewriteRule ^tyre-killer$ tyre-killer.php [L]  
+RewriteRule ^speed-hump-worm$ speed-hump-worm.php [L]
+RewriteRule ^speed-hump-worm$ speed-hump-worm.php [L]
+</IfModule>
